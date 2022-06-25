@@ -1,0 +1,58 @@
+Para instalar o json-server, bastar executar o seguinte comando:
+
+sudo npm install -g json-server
+Dento do nosso projeto, vamos criar uma pasta chamada “data” dentro de “assets”
+
+/src/assets/data
+Agora crie um arquivo chamado db.json e jogue dentro da pasta “data” que acabamos de criar:
+
+/src/assets/data/db.json
+Vamos abrir o arquivo db.json e incluir o seguinte json:
+
+{
+  "servidor-api": [
+    {
+      "id": "add 1",
+      "Nome": "Luis Vitorino",
+      "sexo":"Masculino",
+      "idade": "segredo",
+      "Instagram":"@luis.Vitorino28"
+    },
+    {
+      "id": "add 2",
+      "Nome": "Luis Vitorino",
+      "sexo":"Masculino",
+      "idade": "segredo",
+      "Instagram":"@luis.Vitorino28"
+    },
+    {
+      "id": "add 3",
+      "Nome": "Luis Vitorino",
+      "sexo":"Masculino",
+      "idade": "segredo",
+      "Instagram":"@luis.Vitorino28"
+    },
+    {
+      "id": "add 4",
+      "Nome": "Luis Vitorino",
+      "sexo":"Masculino",
+      "idade": "segredo",
+      "Instagram":"@luis.Vitorino28"
+    },
+    {
+      "id": "add 5",
+      "Nome": "Luis Vitorino",
+      "sexo":"Masculino",
+      "idade": "segredo",
+      "Instagram":"@luis.Vitorino28"
+    }
+  ]
+}
+Arquivo db.json para o json-server
+
+Nossa estrutura de pastas e o arquivo db.json ficará assim:
+
+Estrutura de pastas com o arquivo db.json
+Vamos rodar o json-server para simular nossa API REST, abra um novo terminal e na raiz do projeto execute o seguinte comando:
+
+json-server --watch src/assets/data/db.json
